@@ -1,5 +1,4 @@
 import Sunday from "../pngs/sunday.jpg";
-let imgSunday = 1;
 
 function Card2() {
 
@@ -18,7 +17,7 @@ function Card2() {
    <button
   className="imgBotao"
   onClick={() => {
-    imgSunday--;
+    
   }}
 >
   &lt;
@@ -29,7 +28,7 @@ function Card2() {
       <button
   className="imgBotao"
   onClick={() => {
-    imgSunday++;
+  
   }}
 >
   &gt;
