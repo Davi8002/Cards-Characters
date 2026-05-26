@@ -1,12 +1,37 @@
+import React, { useState } from 'react';
+
+
 
 function CardRoot(props) {
+const [numeroFoto, setNumeroFoto] = useState(1);
+const [fotoAtual, setFotoAtual] = useState(props.foto1);
+
+  function trocarFoto(novoNumero){
+    switch(novoNumero){
+      case 1:
+        setFotoAtual(props.foto1)
+        break;
+      case 2:
+        setFotoAtual(props.foto2)
+        break;
+      case 3:
+        setFotoAtual(props.foto3)
+        break;
+      case 4:
+        setFotoAtual(props.foto4)
+        break;
+        
+
+    }
+  }
+
 
   return (
 
     <div className={props.classe}>
     
      <img
-             src= {props.foto}
+             src= {fotoAtual}
              className="imagem"
              alt="Personagem"
            />
@@ -16,7 +41,9 @@ function CardRoot(props) {
    <button
   className="imgBotao"
   onClick={() => {
-   
+    const novoNumero = numeroFoto  - 1; 
+      setNumeroFoto(novoNumero);
+      trocarFoto(novoNumero);
   }}
 >
   &lt;
@@ -27,7 +54,9 @@ function CardRoot(props) {
       <button
   className="imgBotao"
   onClick={() => {
-   
+    const novoNumero = numeroFoto + 1; 
+    setNumeroFoto(novoNumero);
+    trocarFoto(novoNumero);
   }}
 >
   &gt;
@@ -53,7 +82,7 @@ function CardRoot(props) {
   <div className = "linkBotaoDiv">
      <button
   onClick={() => {
-    window.open("https://www.youtube.com/watch?v=QbPtrnmGlZ8&list=RDQbPtrnmGlZ8&start_radio=1");
+    window.open(props.link1);
   }}
 >
   Trailer 1
@@ -62,7 +91,7 @@ function CardRoot(props) {
 
   <button
   onClick={() => {
-    window.open("https://www.youtube.com/watch?v=LlO4z29axuA");
+    window.open(props.link2);
   }}
 >
 Trailer 2
