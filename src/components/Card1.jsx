@@ -11,8 +11,28 @@ function Card1() {
         className="imagem"
         alt="Personagem"
       />
-
+ <div className = "imgBotaoDiv">
+   <button
+  className="imgBotao"
+  onClick={() => {
+   
+  }}
+>
+  &lt;
+    </button>
+    
       <h1>Oshawott</h1>
+      
+      <button
+  className="imgBotao"
+  onClick={() => {
+   
+  }}
+>
+  &gt;
+    </button>
+</div>
+
 
       <p>
         <strong>Jogo:</strong> --- Pokémon

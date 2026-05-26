@@ -12,7 +12,28 @@ function Card3() {
         alt="Personagem"
       />
 
-      <h1>Cathy Portillo</h1>
+       <div className = "imgBotaoDiv">
+   <button
+  className="imgBotao"
+  onClick={() => {
+
+  }}
+>
+  &lt;
+    </button>
+    
+      <h1>Cathy</h1>
+      
+      <button
+  className="imgBotao"
+  onClick={() => {
+    
+  }}
+>
+  &gt;
+    </button>
+</div>
+
 
       <p>
         <strong>Jogo:</strong> --- Until Then

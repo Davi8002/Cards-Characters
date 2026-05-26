@@ -13,7 +13,28 @@ function Card4() {
         alt="Personagem"
       />
 
+      <div className = "imgBotaoDiv">
+   <button
+  className="imgBotao"
+  onClick={() => {
+  
+  }}
+>
+  &lt;
+    </button>
+    
       <h1>Fuchi Sunao</h1>
+      
+      <button
+  className="imgBotao"
+  onClick={() => {
+    
+  }}
+>
+  &gt;
+    </button>
+</div>
+
 
       <p>
         <strong>Música:</strong> --- Insomnia (Eve)
@@ -26,7 +47,7 @@ function Card4() {
       <p>
         <strong>Frase em Destaque:</strong> "At this rate i'll keep being empty in this unfulfilling city"
       </p>
-
+<div className = "linkBotaoDiv">
       <button
   onClick={() => {
     window.open("https://www.youtube.com/watch?v=35nV_M3asRs&list=RD35nV_M3asRs&rco=1");
@@ -46,7 +67,7 @@ Música 2
   
 
     </div>
-
+</div>
   );
 
 }
